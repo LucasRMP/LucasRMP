@@ -7,8 +7,7 @@
 ---
 
 <p align="start"> 
- <img src="https://github-readme-stats.vercel.app/api?username=lucasrmp&show_icons=true&theme=radical&count_private=true&show_icons=true" alt="lucasrmp" style="width:100%" /> 
+  <img src="https://github-readme-stats.vercel.app/api?username=lucasrmp&show_icons=true&theme=radical&count_private=true&show_icons=true" alt="lucasrmp" /> 
+  <img  style="height:max-content;" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=lucasrmp&layout=compact&theme=radical" />
 </p>
-<p align="start"> 
- <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=lucasrmp&layout=compact&theme=radical" />
-</p>
+
