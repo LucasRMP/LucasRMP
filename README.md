@@ -6,8 +6,5 @@
 
 ---
 
-<p align="start"> 
-  <img src="https://github-readme-stats.vercel.app/api?username=lucasrmp&show_icons=true&theme=radical&count_private=true&show_icons=true" alt="lucasrmp" /> 
-  <img  style="height:max-content;" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=lucasrmp&layout=compact&theme=radical" />
-</p>
+![Metrics](https://metrics.lecoq.io/LucasRMP?template=classic&isocalendar=1&languages=1&habits=1&lines=1&achievements=1&isocalendar.duration=half-year&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&habits.from=200&habits.days=14&habits.facts=true&habits.charts=false&habits.trim=false&achievements.threshold=C&achievements.secrets=true&achievements.display=detailed&achievements.limit=0&config.timezone=America%2FSao_Paulo)
 
