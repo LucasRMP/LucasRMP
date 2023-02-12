@@ -1,0 +1,3 @@
+{
+  "extends": ["@rmp/eslint-config-custom/nextjs"]
+}
