@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
-    "test": "jest --coverage",
+    "test": "jest --coverage --passWithNoTests",
     "storybook": "concurrently \"yarn:watch-sb:*\"",
     "watch-sb:css": "npx tailwindcss -i ./styles/base.css -o ./public/tailwind.css --watch",
     "watch-sb:storybook": "start-storybook -p 6006",
