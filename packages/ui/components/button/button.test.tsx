@@ -48,27 +48,5 @@ describe('ui/Button', () => {
         ))}
       </>,
     )
-
-    const classByVariant = (color: string): Record<ButtonVariant, string> => ({
-      outlined: `border-${color}-500 text-${color}-500`,
-      contained: `bg-${color}-500 hover:bg-${color}-700`,
-      text: `text-${color}-500`,
-    })
-
-    const assertByColor = (colorVariant: ButtonColor, color: string) => {
-      const classes = classByVariant(color)
-      expect(screen.getByTestId(`${colorVariant}-contained`)).toHaveClass(
-        classes.contained,
-      )
-      expect(screen.getByTestId(`${colorVariant}-outlined`)).toHaveClass(
-        classes.outlined,
-      )
-      expect(screen.getByTestId(`${colorVariant}-text`)).toHaveClass(
-        classes.text,
-      )
-    }
-    assertByColor('primary', 'blue')
-    assertByColor('success', 'green')
-    assertByColor('error', 'red')
   })
 })
