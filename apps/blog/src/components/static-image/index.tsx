@@ -1,6 +1,7 @@
 import Image, { ImageProps } from 'next/image'
-import { staticImageLoader } from './loader'
 import React from 'react'
+
+import { staticImageLoader } from './loader'
 
 interface StaticImageProps extends ImageProps {}
 

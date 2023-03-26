@@ -16,5 +16,6 @@
       "outputs": ["coverage/**"]
     }
   },
-  "globalDependencies": [".env", ".env.local"]
+  "globalDependencies": [".env", ".env.local"],
+  "globalEnv": ["NEXT_PUBLIC_STATIC_IMAGE_BUCKET_URL"]
 }

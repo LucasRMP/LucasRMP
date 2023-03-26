@@ -1,28 +1,9 @@
-import { StaticImage } from 'components/static-image'
-import { ChevronDown } from 'components/icons/chevron-down'
-import { Button } from '@rmp/ui'
 import React from 'react'
 
-const useTypingText = (text: string, delay = 100) => {
-  const [index, setIndex] = React.useState(0)
-  const [typingText, setTypingText] = React.useState('')
+import { Button } from '@rmp/ui'
 
-  React.useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIndex(prevIndex => prevIndex + 1)
-    }, delay)
-
-    return () => {
-      clearTimeout(timeout)
-    }
-  }, [index])
-
-  React.useEffect(() => {
-    setTypingText(text.slice(0, index % text.length))
-  }, [index])
-
-  return typingText
-}
+import { StaticImage } from 'components/static-image'
+import { ChevronDown } from 'components/icons/chevron-down'
 
 const Home = () => (
   <div
@@ -35,7 +16,7 @@ const Home = () => (
     <div className="container flex justify-between items-center">
       <div className="flex flex-col gap-7">
         <h1 className="text-6xl leading-tight font-bold">
-          Hi, I'm <span className="text-primary-600">Lucas</span>
+          Hi, I{"'"}m <span className="text-primary-600">Lucas</span>
           <br />
           Software Engineer
         </h1>
