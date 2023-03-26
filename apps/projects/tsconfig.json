@@ -1,6 +1,6 @@
 {
   "extends": "@rmp/tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "src/**/*"],
+  "include": ["next-env.d.ts", "**/*.ts", "src/**/*", ".next/types/**/*.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "baseUrl": "./src"

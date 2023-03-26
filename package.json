@@ -1,5 +1,5 @@
 {
-  "name": "turbo-app",
+  "name": "lucasrmp",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -35,14 +35,14 @@
     "jest-environment-jsdom": "^29.3.1",
     "lint-staged": "^13.1.0",
     "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "^1.7.0"
   },
   "dependencies": {},
   "lint-staged": {
-    "apps/**/*.{ts,tsx,md}": [
+    "apps/**/*.{ts,tsx}": [
       "eslint --fix"
     ],
-    "packages/ui/**/*.{ts,tsx,md}": [
+    "packages/ui/**/*.{ts,tsx}": [
       "eslint --fix"
     ],
     "*.json": [

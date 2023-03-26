@@ -14,7 +14,7 @@ export const buttonStyles = cva(
         error: '',
       },
       variant: {
-        contained: 'text-white',
+        contained: 'text-slate-50',
         outlined:
           'bg-transparent hover:bg-transparent border-2 hover:opacity-75',
         text: 'bg-transparent hover:bg-transparent border-0',
