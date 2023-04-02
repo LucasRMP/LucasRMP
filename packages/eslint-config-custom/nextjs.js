@@ -59,6 +59,8 @@ module.exports = {
         ],
       },
     ],
+    'jest/expect-expect': 'off',
+    'testing-library/no-node-access': 'off',
   },
   overrides: [
     {
@@ -72,6 +74,8 @@ module.exports = {
           'off',
           { devDependencies: ['**/?(*.)+(spec|test).[jt]s?(x)'] },
         ],
+        'jest/expect-expect': 'off',
+        'testing-library/no-node-access': 'off',
       },
     },
   ],

@@ -1,11 +1,10 @@
-import 'styles/globals.css'
+import '@rmp/ui/styles/base.css'
+
 import { Metadata } from 'next'
 import Link from 'next/link'
 
 import { monoFont, sansFont } from '@rmp/ui/typography'
-import { Button } from '@rmp/ui'
-
-import { Logo } from 'components/svg/logo'
+import { AppBar, Button, Logo } from '@rmp/ui'
 
 export const metadata: Metadata = {
   title: {
@@ -36,7 +35,7 @@ export default function RootLayout({
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between wrapper p-10">
+    <AppBar>
       <Logo />
 
       <Button
@@ -48,7 +47,7 @@ const Header = () => {
       >
         <span className="text-slate-50 text-xl">Buy me a Coffee</span>
       </Button>
-    </header>
+    </AppBar>
   )
 }
 

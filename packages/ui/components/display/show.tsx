@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { DisplayProps } from './constants'
 
 export const Show: React.FC<DisplayProps> = ({ children, when }) => {

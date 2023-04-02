@@ -2,18 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.button-accent-primary {
-  --accent-color: blue;
-}
-
-.button-accent-secondary {
-  --accent-color: gray;
-}
-
-.button-accent-error {
-  --accent-color: red;
-}
-
 .text-lh-100 {
   line-height: 100%;
+}
+
+.wrapper {
+  @apply container mx-auto;
 }

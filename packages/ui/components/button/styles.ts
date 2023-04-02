@@ -2,10 +2,8 @@ import { cva } from 'class-variance-authority'
 
 import { COMPOUND_VARIANTS } from './constants'
 
-// const className = "text-"
-
 export const buttonStyles = cva(
-  'font-semibold tracking-wider text-lh-100 rounded-md transition-all',
+  'font-semibold tracking-wider text-lh-100 rounded-md',
   {
     variants: {
       color: {
@@ -15,8 +13,7 @@ export const buttonStyles = cva(
       },
       variant: {
         contained: 'text-slate-50',
-        outlined:
-          'bg-transparent hover:bg-transparent border-2 hover:opacity-75',
+        outlined: 'bg-transparent border-2 ',
         text: 'bg-transparent hover:bg-transparent border-0',
       },
       size: {

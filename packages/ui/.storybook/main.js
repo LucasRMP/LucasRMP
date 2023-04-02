@@ -12,4 +12,7 @@ module.exports = {
   core: {
     builder: '@storybook/builder-webpack5',
   },
+  typescript: {
+    reactDocgen: 'react-docgen-typescript-plugin',
+  },
 }

@@ -1,15 +1,21 @@
 import Image from 'next/image'
 
+import { Title } from 'components/title'
+
 import { NavLink } from './nav-link'
+import { Contact } from './contact'
 
 export default function HomePage() {
   return (
     <div className="wrapper p-10 flex flex-col gap-10">
       <Heading />
+
       <div className="flex items-center justify-between gap-48">
         <Presentation />
         <Skills />
       </div>
+
+      <Contact />
     </div>
   )
 }
@@ -77,20 +83,6 @@ const Skills = () => (
 
 const SkillImage = () => (
   <div className="w-20 h-20 bg-slate-200 rounded-3xl"></div>
-)
-
-const Title: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
-  children,
-  className = '',
-  ...props
-}) => (
-  <h2
-    className={`text-2xl font-bold font-mono text-slate-50 w-max ${className}`}
-    {...props}
-  >
-    {children}
-    <hr className="w-1/3 border-primary-600 mt-1" />
-  </h2>
 )
 
 const Quote: React.FC<React.PropsWithChildren> = ({ children }) => (

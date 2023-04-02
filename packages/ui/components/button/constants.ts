@@ -29,7 +29,8 @@ const disabledClassByVariant = {
 const colorToClassName = {
   [ButtonColorEnum.PRIMARY]: {
     [ButtonVariantEnum.CONTAINED]: `bg-primary-600 hover:bg-primary-700`,
-    [ButtonVariantEnum.OUTLINED]: 'border-primary-600 text-primary-600',
+    [ButtonVariantEnum.OUTLINED]:
+      'border-primary-600 text-primary-600 hover:text-white hover:bg-primary-600',
     [ButtonVariantEnum.TEXT]: 'text-primary-600',
   },
   [ButtonColorEnum.SUCCESS]: {
