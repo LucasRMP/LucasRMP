@@ -4,7 +4,9 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 import { monoFont, sansFont } from '@rmp/ui/typography'
-import { AppBar, Button, Logo } from '@rmp/ui'
+import { AppBar, Logo } from '@rmp/ui'
+
+import { DrawerProvider, NavMenu } from 'components/navbar'
 
 export const metadata: Metadata = {
   title: {
@@ -23,11 +25,16 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${monoFont.variable} ${sansFont.variable} text-slate-50`}
+      data-theme="dark"
     >
-      <body className="bg-slate-900 flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className="bg-base-100">
+        <DrawerProvider>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </DrawerProvider>
       </body>
     </html>
   )
@@ -36,24 +43,18 @@ export default function RootLayout({
 const Header = () => {
   return (
     <AppBar>
-      <Logo />
+      <Link href="/">
+        <Logo />
+      </Link>
 
-      <Button
-        variant="outlined"
-        size="sm"
-        component={Link}
-        href="https://www.buymeacoffee.com/lucasrmp"
-        target="_blank"
-      >
-        <span className="text-slate-50 text-xl">Buy me a Coffee</span>
-      </Button>
+      <NavMenu />
     </AppBar>
   )
 }
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-neutral">
       <div className="wrapper p-4 text-slate-300 text-xl">© Chesp Design</div>
     </footer>
   )

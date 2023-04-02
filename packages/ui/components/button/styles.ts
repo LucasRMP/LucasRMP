@@ -3,7 +3,7 @@ import { cva } from 'class-variance-authority'
 import { COMPOUND_VARIANTS } from './constants'
 
 export const buttonStyles = cva(
-  'font-semibold tracking-wider text-lh-100 rounded-md',
+  'flex items-center font-semibold tracking-wider text-lh-100 rounded-md active:scale-90 transition-transform',
   {
     variants: {
       color: {

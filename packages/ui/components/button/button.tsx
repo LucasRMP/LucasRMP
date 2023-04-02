@@ -4,8 +4,7 @@ import { Show } from '../display'
 import { ButtonColor, ButtonSize, ButtonVariant } from './constants'
 import { buttonStyles } from './styles'
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean
   color?: ButtonColor
   variant?: ButtonVariant
@@ -15,9 +14,10 @@ export interface ButtonProps
   component?: React.ElementType | string
   href?: string
   target?: string
+  htmlFor?: string
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export function Button({
   children,
   fullWidth,
   color,
@@ -27,7 +27,7 @@ export const Button: React.FC<ButtonProps> = ({
   endIcon,
   component: Component = 'button',
   ...props
-}) => {
+}: ButtonProps) {
   const Container = React.useMemo(() => {
     if (typeof Component === 'string') {
       return (props: any) => React.createElement(Component, props)
@@ -48,7 +48,7 @@ export const Button: React.FC<ButtonProps> = ({
       })}
       {...props}
     >
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 text-center w-max">
         <Show when={startIcon}>{startIcon}</Show>
         {children}
         <Show when={endIcon}>{endIcon}</Show>

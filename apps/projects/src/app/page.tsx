@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import { routes } from 'constants/routes'
 
 import { Title } from 'components/title'
+import { NavLink } from 'components/navbar'
 
-import { NavLink } from './nav-link'
 import { Contact } from './contact'
 
 export default function HomePage() {
@@ -42,23 +43,19 @@ const LucasPicture = () => (
 const NavBar = () => (
   <nav className="flex-1">
     <ul className="flex flex-col gap-10">
-      <NavLink index={0} href="/">
-        Home
-      </NavLink>
-      <NavLink index={1} href="/blog">
-        Blog
-      </NavLink>
-      <NavLink index={2} href="/projects">
-        Projects
-      </NavLink>
+      {routes.map((route, idx) => (
+        <NavLink key={route.path} index={idx} href={route.path}>
+          {route.label}
+        </NavLink>
+      ))}
     </ul>
   </nav>
 )
 
 const Presentation = () => (
   <div className="flex flex-col gap-6 flex-1">
-    <h1 className="text-5xl font-bold font-mono text-slate-50">
-      Hi, I&apos;m <span className="text-primary-600">Lucas</span>
+    <h1 className="text-5xl font-bold font-mono">
+      Hi, I&apos;m <span className="text-primary">Lucas</span>
       <br />
       Software Engineer
     </h1>
@@ -86,7 +83,7 @@ const SkillImage = () => (
 )
 
 const Quote: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <blockquote className="text-xl text-slate-300 border-l-4 border-primary-600 px-3 py-1">
+  <blockquote className="text-xl opacity-80 border-l-4 border-primary px-3 py-1">
     <p>{children}</p>
   </blockquote>
 )

@@ -25,6 +25,7 @@
     "@storybook/manager-webpack5": "^6.5.15",
     "@storybook/react": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
@@ -40,7 +41,8 @@
   "dependencies": {
     "@next/font": "^13.2.4",
     "class-variance-authority": "^0.4.0",
-    "clsx": "^1.2.1"
+    "clsx": "^1.2.1",
+    "daisyui": "^2.51.5"
   },
   "resolutions": {
     "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"

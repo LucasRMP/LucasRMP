@@ -11,6 +11,6 @@ export const Title: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
     {...props}
   >
     {children}
-    <hr className="w-1/3 border-primary-600 mt-1" />
+    <hr className="w-1/3 border-primary mt-1" />
   </h2>
 )

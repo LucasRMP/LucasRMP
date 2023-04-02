@@ -3,7 +3,7 @@
 exports[`ui/Quote should render a blockquote element with the children passed in 1`] = `
 <div>
   <blockquote
-    class="text-xl text-slate-300 border-l-4 border-primary-600 px-3 py-1"
+    class="text-xl text-slate-300 border-l-4 border-primary px-3 py-1"
   >
     <p>
       <span

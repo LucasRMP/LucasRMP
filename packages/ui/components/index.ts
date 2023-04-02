@@ -1,5 +1,6 @@
 export * from './app-bar'
 export * from './button'
+export * from './buy-me-a-coffee-button'
 export * from './display'
 export * from './quote'
 export * from './svg'

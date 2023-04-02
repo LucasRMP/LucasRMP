@@ -2,7 +2,7 @@
 
 exports[`ui/Button should render properly in the base case 1`] = `
 <button
-  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary-600 hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
+  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
   role="button"
   type="button"
 >
@@ -16,7 +16,7 @@ exports[`ui/Button should render properly in the base case 1`] = `
 
 exports[`ui/Button should render properly when component is passed 1`] = `
 <a
-  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary-600 hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
+  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
   href="https://google.com"
   role="button"
   type="button"
@@ -31,7 +31,7 @@ exports[`ui/Button should render properly when component is passed 1`] = `
 
 exports[`ui/Button should render properly when disabled 1`] = `
 <button
-  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary-600 hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
+  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
   disabled=""
   role="button"
   type="button"
