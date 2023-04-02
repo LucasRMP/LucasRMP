@@ -2,12 +2,12 @@
 
 exports[`ui/Button should render properly in the base case 1`] = `
 <button
-  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
+  class="flex items-center font-semibold tracking-wider text-lh-100 rounded-md active:scale-90 transition-transform text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
   role="button"
   type="button"
 >
   <div
-    class="flex flex-row gap-2"
+    class="flex flex-row gap-2 text-center w-max"
   >
     A normal button
   </div>
@@ -16,13 +16,13 @@ exports[`ui/Button should render properly in the base case 1`] = `
 
 exports[`ui/Button should render properly when component is passed 1`] = `
 <a
-  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
+  class="flex items-center font-semibold tracking-wider text-lh-100 rounded-md active:scale-90 transition-transform text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
   href="https://google.com"
   role="button"
   type="button"
 >
   <div
-    class="flex flex-row gap-2"
+    class="flex flex-row gap-2 text-center w-max"
   >
     A link
   </div>
@@ -31,13 +31,13 @@ exports[`ui/Button should render properly when component is passed 1`] = `
 
 exports[`ui/Button should render properly when disabled 1`] = `
 <button
-  class="font-semibold tracking-wider text-lh-100 rounded-md text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
+  class="flex items-center font-semibold tracking-wider text-lh-100 rounded-md active:scale-90 transition-transform text-slate-50 py-3 px-5 text-lg bg-primary hover:bg-primary-700 disabled:bg-gray-500 disabled:hover:bg-gray-500"
   disabled=""
   role="button"
   type="button"
 >
   <div
-    class="flex flex-row gap-2"
+    class="flex flex-row gap-2 text-center w-max"
   >
     A disabled button
   </div>
